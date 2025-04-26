@@ -89,3 +89,13 @@ echo "<h3>Less Than or Equal To(<=)</h3>";
 echo "<br>";
 var_dump($b<=$c);   //Output: True
 
+//Logical Operators
+echo "<h1>Logical Operators</h1>";
+echo "<br>";
+echo "<h3>And(&&)</h3>";
+echo "<br>";
+var_dump($b>$c && $b>$d);  //Output: False
+echo "<br>";
+echo "<h3>Or(||)</h3>";
+echo "<br>";
+var_dump($b>$c || $b>$d);  //Output: True
