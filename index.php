@@ -129,6 +129,12 @@ echo "<br>";
 
 //resource
 echo "<h1>Resource</h1>";
+file_put_contents("test.txt","");
+echo "<br>";
+echo gettype($var);
+echo "<br>";
+var_dump($var);
+echo "<br>";
 
 
 
