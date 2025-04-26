@@ -10,16 +10,16 @@ $five= 5;
 echo "<h1>Arithmetic Operators</h1>";
 echo "<br>";
 echo "<h3>Addition</h3>";
-echo $two+$three;
+echo $two+$three;   //Output: 5
 echo "<br>";
 echo "<h3>Subtraction</h3>";
-echo $four-$two;
+echo $four-$two;    //Output: 2
 echo "<br>";
 echo "<h3>Multiplication</h3>";
-echo $two*$four;
+echo $two*$four;    //Output: 8
 echo "<br>";
 echo "<h3>Division</h3>";
-echo $four/$two;
+echo $four/$two;    //Output: 2
 echo "<br>";
 echo "<h3>Modulus</h3>";
-echo $five%$three;
+echo $five%$three;  //Output: 2
