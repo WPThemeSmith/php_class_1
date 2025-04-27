@@ -9,7 +9,6 @@ $five= 5;
 
 echo "<h1>Arithmetic Operators</h1>";
 echo "<br>";
-<<<<<<< HEAD
 echo "<h3>Addition</h3>";
 echo $two+$three;   //Output: 5
 echo "<br>";
@@ -25,7 +24,7 @@ echo "<br>";
 echo "<h3>Modulus</h3>";
 echo $five%$three;  //Output: 2
 
-=======
+
 echo "<h3>Addition(+)</h3>";
 echo $two+$three;   //Output: 5
 echo "<br>";
@@ -116,4 +115,4 @@ echo "<br>";
 echo "<h3>Or(||)</h3>";
 echo "<br>";
 var_dump($b>$c || $b>$d);  //Output: True
->>>>>>> operators_expressions
+
