@@ -12,3 +12,25 @@ if ($num_1 == $num_3) {
 }else {
     echo "Hello from else Block";
 }
+
+$score = 40;
+switch ($score) {
+    case $score > 100: 
+        echo "I am over talented";
+        break;
+    case $score > 80 && $score < 90:
+        echo "I am GPA 5";
+        break;
+    case $score > 90 && $score < 100: 
+        echo "I am over GPA 5";
+        break;
+    case $score < 80 && $score > 70: 
+        echo "I am under GPA 5";
+        break;
+        case $score < 69 && $score > 33: 
+            echo "I am Pass";
+            break;
+    default:
+        echo "I am fail";
+        break;
+}
