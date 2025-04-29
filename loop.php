@@ -22,3 +22,11 @@ while ($y <= 5) {
     echo "The number is: $y <br>";
     $y++;
 }
+echo "<br>";
+
+echo "<h3>Do While Loop</h3>";
+$z = 1;
+do {
+    echo "The number is: $z <br>";
+    $z++;
+} while ($z <= 5);
