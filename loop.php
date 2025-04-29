@@ -30,3 +30,14 @@ do {
     echo "The number is: $z <br>";
     $z++;
 } while ($z <= 5);
+echo "<br>";
+
+echo "<h3>Break Loop</h3>";
+$w = 1;
+while (true) {
+    echo "The number is: $w <br>";
+    $w++;
+    if ($w > 5) {
+        break;
+    }
+}
