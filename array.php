@@ -137,3 +137,97 @@ print_r($students);   // Array ( [0] => Array ( [Name] => Ratna [Marks] => 85 [G
 
 
 
+//Creating Arrays
+// 1. Using array() function
+$colors = array("red", "green", "blue", "yellow");
+
+// 2. Using short array syntax (PHP 5.4+)
+$fruits = ['name' => 'banana', 'color' => 'yellow', 'taste' => 'sweet'];
+
+
+//Assessing Array Elements
+echo $colors[0]; // Output: red
+echo "<br>";
+echo $fruits['name']; // Output: banana
+echo '<br>';
+echo $fruits['color']; // Output: yellow
+echo '<br>';
+echo $fruits['taste']; // Output: sweet
+
+//Modifying Array Elements
+$colors[1] = "purple"; // Change the second element to purple
+echo "<br>";
+$fruits['color'] = "green"; // Change the color to green
+
+echo $colors[1]; // Output: purple
+echo "<br>";
+echo $fruits['color']; // Output: green
+echo "<br>";
+//Adding Elements to an Array
+$colors[] = "orange"; // Add a new element to the end of the array
+$fruits['size'] = "medium"; // Add a new key-value pair to the associative array
+
+
+echo $colors[4]; // Output: orange
+echo "<br>";
+echo $fruits['size']; // Output: medium
+
+
+//Removing Elements from an Array
+unset($colors[2]); // Remove the third element from the indexed array
+unset($fruits['taste']); // Remove the taste key-value pair from the associative array
+
+// echo "<br>";
+// echo $colors[2]; 
+// echo "<br>";
+// echo $fruits["taste"]; echo "<br>";
+echo "<br>";
+
+
+//Useful Array Functions
+
+//$number_array = [1, 2, 3, 4, 5];
+
+echo count($colors); // Count the number of elements in the array
+echo "<br>";
+
+$values = array_values($fruits); // Get all values from the associative array
+echo "<pre>";
+print_r($values); echo "<br>";
+
+$keys = array_keys($fruits); // Get all keys from the associative array
+echo "<pre>";
+print_r($keys); echo "<br>";
+
+if (in_array("red", $colors)) { // Check if a value exists in the array
+    echo "Red is in the array";
+} else {
+    echo "Red is not in the array";
+}
+echo "<br>";
+
+if (is_array($colors)) { // Check if a variable is an array
+    echo "This is an array";
+} else {
+    echo "This is not an array";
+}
+echo "<br>";
+
+if (array_key_exists("name", $fruits)) { // Check if a key exists in the associative array
+    echo "The key 'name' exists in the array";
+} else {
+    echo "The key 'name' does not exist in the array";
+}
+echo "<br>";
+
+//Looping
+
+foreach ($colors as $color) { // Loop through the indexed array
+    echo $color . ", ";
+}
+echo "<br>";
+
+foreach ($fruits as $key => $value) { // Loop through the associative array
+    echo "$key: $value <br>";
+}
+echo "<br>";
